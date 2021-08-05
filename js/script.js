@@ -23,12 +23,18 @@ const createUser = () => {
     document.querySelector('.username').value = '';
     document.querySelector('.email').value = '';
     document.querySelector('.dob').value = '';
+  };
+
+  const calcAge = birthYear => {
+    const currentYear = new Date().getFullYear();
+    const age = currentYear - birthYear;
+    return age;
   }
 
-  if(email && username && dob) {
+  if(Name && email && username) {
     const User = {
       Name,
-      username,
+      username: username.replace(/\s/g, '').toLowerCase(),
       email,
       dob,
       id: Users.length + 1,
@@ -41,7 +47,7 @@ const createUser = () => {
         <li class='title'>${user.Name}</li>
         <li> <span>Email:</span> ${user.email}</li>
         <li> <span>Username:</span> ${user.username}</li>
-        <li class='date'> ${user.dob} </li>
+        <li class='date'> ${calcAge(user.dob)} years old</li>
         <li class='close'>-</li>
         <li class='edit'>+</li>
       </ul>
