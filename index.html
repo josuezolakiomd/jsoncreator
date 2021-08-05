@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>CRUD Basico</title>
+</head>
+
+<body>
+  <div class="Container">
+    <form class="form">
+      <h1> JSON Creator </h1>
+      <input type="text" placeholder="Type your name..." class="name">
+      <input type="text" placeholder="Type your username account..." class="username">
+      <input type="email" placeholder="Type your email address..." class="email">
+      <input type="date" class="dob">
+      <button class="btn">Create User</button>
+    </form>
+
+    <div class="Users">
+      <h3>
+        <span class="usersTitle">User</span>
+        <span class="allUsers">[ ... ]</span>
+      </h3>
+
+      <div class="usersJson"></div>
+    </div>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
