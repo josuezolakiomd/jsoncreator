@@ -3,6 +3,7 @@ const usersJson = document.querySelector('.usersJson');
 const allUsers = document.querySelector('.allUsers');
 const usersTitle = document.querySelector('.usersTitle');
 const closeModal = document.querySelector('.close');
+const infoBanner = document.querySelector('.info');
 
 const Users = [];
 
@@ -11,6 +12,16 @@ const closeUserModal = (index) => {
   console.log(user);
   return user;
 }
+
+const callBanner = () => { 
+  setTimeout(() => {
+    infoBanner.style.marginTop = '20px';
+    setTimeout(() => {
+      infoBanner.style.marginTop = '-210px';
+    }, 6000)
+    console.log('Timer working...')
+  }, 1000);
+};
 
 const createUser = () => {
   const Name = document.querySelector('.name').value;
@@ -67,5 +78,5 @@ const createUser = () => {
   }
 };
 
-
 createButton.addEventListener('click', createUser);
+callBanner();
