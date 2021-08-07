@@ -8,9 +8,10 @@
   --white: #fafafa;
   --black: #222;
   --green: rgb(37, 146, 16);
+  --realse: #0ff;
 }
 body {
-  font-family: 'Arial';
+  font-family: "Arial";
 }
 
 .Container {
@@ -30,7 +31,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top:0px;
+  top: 0px;
   left: 20px;
   width: 300px;
   height: 125px;
@@ -39,7 +40,7 @@ body {
   margin-top: -210px;
   /* margin-top: 20px; */
   border-radius: 0.25rem;
-  transition:all ease-in-out 1s;
+  transition: all ease-in-out 1s;
 }
 
 .info .span {
@@ -87,7 +88,8 @@ input + input {
   margin-top: 10px;
 }
 
-input, button {
+input,
+button {
   font-size: 1.05rem;
   width: 80%;
   padding: 12px 20px;
@@ -95,7 +97,7 @@ input, button {
   color: #ddd;
   border: 0;
   border-radius: 0.25rem;
-  outline:0;
+  outline: 0;
 }
 
 ::placeholder {
@@ -129,7 +131,8 @@ input, button {
   margin-bottom: 30px;
 }
 
-.Users h3, usersTitle {
+.Users h3,
+usersTitle {
   margin-top: 15px;
   letter-spacing: 0.6px;
   color: var(--white);
@@ -156,7 +159,7 @@ ul:hover {
 
 li {
   color: #bbb;
-  letter-spacing:0.3px;
+  letter-spacing: 0.3px;
   font-size: 1.05rem;
   list-style: none;
 }
@@ -191,7 +194,8 @@ li span {
   color: #777;
 }
 
-.close, .edit {
+.close,
+.edit {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,7 +217,6 @@ li span {
   right: 50px;
 }
 
-
 .close:hover,
 .edit:hover {
   transform: scale(1.2);
@@ -222,4 +225,18 @@ li span {
 
 .edit:hover {
   background: rgb(224, 238, 28);
+}
+
+.author {
+  margin-top: 10px;
+  color: #fafafab6;
+  letter-spacing: 0.6px;
+}
+
+.author span {
+  color: var(--realse);
+}
+
+.credits {
+  visibility: hidden;
 }
